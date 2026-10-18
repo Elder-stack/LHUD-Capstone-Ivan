@@ -1,6 +1,4 @@
-<p align="center">
-# Singapore HDB Resale Flats Analysis <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/8e4936ac-b164-414c-bc9f-56b9f7533a4a" />
-
+# Singapore HDB Resale Flats Analysis
 
 <p align="center">
  <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a60ed822-80d0-48c8-9212-7523d3e1e986" />
