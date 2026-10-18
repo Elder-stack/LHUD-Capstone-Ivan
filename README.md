@@ -6,7 +6,6 @@
 
 <h1 align="center">Singapore HDB Resale Flats Dataset</h1>
 
-Core Problem Statement
 How to comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards
 
 Research Objectives 
