@@ -4,7 +4,7 @@
  <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a60ed822-80d0-48c8-9212-7523d3e1e986" />
 </p>
 
-<h1 align="center">Singapore HDB Resale Flats Dataset</h1>
+## Problem Statement 
 
 How to comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards
 
@@ -16,6 +16,8 @@ How to comprehensively analyze historical Singapore Housing and Development Boar
 
 <img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
 
+
+<h1 align="center">Singapore HDB Resale Flats Dataset</h1>
 ## 📋 Dataset Overview
 
 * **File Name:** `product_sales_practice.csv`
