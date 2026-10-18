@@ -1,3 +1,7 @@
+Prepared By Ivan Ho 
+
+DataSet Used : Resale Flat Prices
+
 # Singapore HDB Resale Flats Analysis
 
 <p align="center">
