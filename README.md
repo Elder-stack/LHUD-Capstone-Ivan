@@ -1,10 +1,10 @@
-# Singapore HDB Resale Flat Dataset 📊
+# Singapore HDB Resale Flats Dataset 📊
 
 <p align="center">
  <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a60ed822-80d0-48c8-9212-7523d3e1e986" />
 </p>
 
-<h1 align="center">Electronics Retail Sales Dataset</h1>
+<h1 align="center">Singapore HDB Resale Flats Dataset</h1>
 
 This repository contains a transactional dataset capturing retail sales performance for consumer electronics products throughout the first half of **2026**. The data includes granular details on order parameters, product categories, geographic regions, salesperson mapping, and promotional discounts.
 
