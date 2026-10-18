@@ -14,10 +14,10 @@ How to comprehensively analyze historical Singapore Housing and Development Boar
 3. Identify Property Valuation DriversObjective: Evaluate how structural and physical attributes—such as flat types, flat models, floor areas, storey ranges, and remaining lease periods or lease commencement dates—influence and determine property valuations.
 4. Evaluate Housing AffordabilityObjective: Assess the financial accessibility of HDB resale flats for buyers by analyzing transaction prices relative to property size, location, and temporal changes over the years.   
 
-<img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
-
 
 <h1 align="center">Singapore HDB Resale Flats Dataset</h1>
+<img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
+
 ## 📋 Dataset Overview
 
 * **File Name:** `product_sales_practice.csv`
