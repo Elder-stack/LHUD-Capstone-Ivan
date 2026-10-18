@@ -12,7 +12,9 @@ How to comprehensively analyze historical Singapore Housing and Development Boar
 1. Understand Housing DemandObjective: Analyze transaction volumes, buying patterns, and market activity across different periods (from 2000 onwards) to determine what drives buyer interest and market liquidity for public housing.
 2. Track Resale Price TrendsObjective: Examine historical price movements and macroeconomic trajectories of HDB resale flats to identify overall market cycles, price growth rates, and temporal appreciation patterns.
 3. Identify Property Valuation DriversObjective: Evaluate how structural and physical attributes—such as flat types, flat models, floor areas, storey ranges, and remaining lease periods or lease commencement dates—influence and determine property valuations.
-4. Evaluate Housing AffordabilityObjective: Assess the financial accessibility of HDB resale flats for buyers by analyzing transaction prices relative to property size, location, and temporal changes over the years.   
+4. Evaluate Housing AffordabilityObjective: Assess the financial accessibility of HDB resale flats for buyers by analyzing transaction prices relative to property size, location, and temporal changes over the years.
+5. Analyze Location-Based Market Performance
+Objective: Compare real estate performance across different towns, streets, and geographic coordinates (utilizing spatial attributes like latitude and longitude) to uncover regional demand hotspots and geographic price variations.  
 
 
 <h1 align="center">Singapore HDB Resale Flats Dataset</h1>
