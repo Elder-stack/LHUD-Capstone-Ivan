@@ -6,6 +6,20 @@
 
 <h1 align="center">Singapore HDB Resale Flats Dataset</h1>
 
+Core Problem Statement
+How to comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards
+
+Research Objectives 
+1. Understand Housing DemandObjective: Analyze transaction volumes, buying patterns, and market activity across different periods (from 2000 onwards) to determine what drives buyer interest and market liquidity for public housing.
+2. Track Resale Price TrendsObjective: Examine historical price movements and macroeconomic trajectories of HDB resale flats to identify overall market cycles, price growth rates, and temporal appreciation patterns.
+3. Identify Property Valuation DriversObjective: Evaluate how structural and physical attributes—such as flat types, flat models, floor areas, storey ranges, and remaining lease periods or lease commencement dates—influence and determine property valuations.
+4. Evaluate Housing AffordabilityObjective: Assess the financial accessibility of HDB resale flats for buyers by analyzing transaction prices relative to property size, location, and temporal changes over the years.   
+
+
+
+
+
+
 This repository contains a transactional dataset capturing retail sales performance for consumer electronics products throughout the first half of **2026**. The data includes granular details on order parameters, product categories, geographic regions, salesperson mapping, and promotional discounts.
 
 It serves as an excellent resource for exploratory data analysis (EDA), sales performance forecasting, regional market analysis, and missing data imputation practice.
