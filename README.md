@@ -14,15 +14,6 @@ Research Objectives
 3. Identify Property Valuation DriversObjective: Evaluate how structural and physical attributes—such as flat types, flat models, floor areas, storey ranges, and remaining lease periods or lease commencement dates—influence and determine property valuations.
 4. Evaluate Housing AffordabilityObjective: Assess the financial accessibility of HDB resale flats for buyers by analyzing transaction prices relative to property size, location, and temporal changes over the years.   
 
-
-
-
-
-
-This repository contains a transactional dataset capturing retail sales performance for consumer electronics products throughout the first half of **2026**. The data includes granular details on order parameters, product categories, geographic regions, salesperson mapping, and promotional discounts.
-
-It serves as an excellent resource for exploratory data analysis (EDA), sales performance forecasting, regional market analysis, and missing data imputation practice.
-
 <img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
 
 ## 📋 Dataset Overview
