@@ -8,7 +8,7 @@
 
 How to comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards
 
-Research Objectives 
+## Research Objectives 
 1. Understand Housing DemandObjective: Analyze transaction volumes, buying patterns, and market activity across different periods (from 2000 onwards) to determine what drives buyer interest and market liquidity for public housing.
 2. Track Resale Price TrendsObjective: Examine historical price movements and macroeconomic trajectories of HDB resale flats to identify overall market cycles, price growth rates, and temporal appreciation patterns.
 3. Identify Property Valuation DriversObjective: Evaluate how structural and physical attributes—such as flat types, flat models, floor areas, storey ranges, and remaining lease periods or lease commencement dates—influence and determine property valuations.
