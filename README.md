@@ -1,4 +1,5 @@
-# Singapore HDB Resale Flats Dataset 📊
+# Singapore HDB Resale Flats Analysis <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/8e4936ac-b164-414c-bc9f-56b9f7533a4a" />
+
 
 <p align="center">
  <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a60ed822-80d0-48c8-9212-7523d3e1e986" />
