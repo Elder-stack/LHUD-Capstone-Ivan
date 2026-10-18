@@ -1,7 +1,7 @@
 * **Prepared By: Ivan Ho**
 * **Dataset Used: Real Estate Resale Flats**
 
-# Singapore HDB Resale Flats Analysis
+# Singapore HDB Resale Flats Analytics
 
 <p align="center">
  <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a60ed822-80d0-48c8-9212-7523d3e1e986" />
