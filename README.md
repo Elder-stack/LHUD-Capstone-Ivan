@@ -1,4 +1,3 @@
-
 # Electronics Retail Sales Dataset 📊
 
 <p align="center">
@@ -11,7 +10,7 @@ This repository contains a transactional dataset capturing retail sales performa
 
 It serves as an excellent resource for exploratory data analysis (EDA), sales performance forecasting, regional market analysis, and missing data imputation practice.
 
-<img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a60ed822-80d0-48c8-9212-7523d3e1e986" />
 
 ## 📋 Dataset Overview
 
