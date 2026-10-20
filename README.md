@@ -23,6 +23,36 @@ Objective: Compare real estate performance across different towns, streets, and 
 <h1 align="center">Singapore HDB Resale Flats Dataset</h1>
 <img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
 
+## Primary Research Objective
+To comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions from 2000 onwards to evaluate market demand, temporal price dynamics, property valuation drivers, housing affordability, and location-based performance across different towns, flat types, and lease durations.   
+
+Specific Research Objectives
+
+Objective 1: Housing Demand & Market ActivityGoal: Analyze transaction volumes and market liquidity trends across different years, months, and flat types.   
+         Key Questions:
+         - How have trading volumes fluctuated from 2000 to the present?
+         - Which flat types (e.g., 3-room, 4-room, 5-room, Executive) experience the highest buyer demand and turnover?
+
+Objective 2: Resale Price Trends & Macroeconomic CyclesGoal: Track historical price trajectories, growth rates, and market cycles for HDB resale flats.   
+         Key Questions:
+         - What are the long-term compound annual growth rates (CAGR) of HDB resale prices?
+         - How have government policy changes, cooling measures, or economic shifts impacted median and mean transaction prices over the decades?
+
+Objective 3: Property Valuation DriversGoal: Quantify the structural and physical attributes that drive flat valuations.   
+         Key Questions:
+         - To what extent do floor area ($\text{m}^2$), storey range, and flat model impact the final resale price?
+         - How does lease decay (remaining lease years vs. lease commencement date) affect property resale valuations over time?
+
+Objective 4: Housing Affordability & Spatial AccessibilityGoal: Assess the financial accessibility of public housing relative to property characteristics and temporal inflation.   
+         Key Questions:
+         - How has the price-to-area ratio ($\text{SGD per m}^2$) evolved across different flat types?
+         - What is the distribution of entry-level versus premium resale housing across various market segments?
+
+Objective 5: Location-Based Market PerformanceGoal: Compare real estate performance, price premiums, and geographic variations across different HDB towns and spatial coordinates.   
+         Key Questions:
+         - Which towns command the highest price premiums and transaction densities?
+         - How do spatial coordinates (latitude and longitude) correlate with resale price clustering across Singapore?
+
 ## 📋 Dataset Overview
 
 * **File Name:** `product_sales_practice.csv`
