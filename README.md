@@ -45,22 +45,6 @@ Objective 5: Location-Based Market PerformanceGoal: Compare real estate performa
          Key Questions:
          - Which towns command the highest price premiums and transaction densities?
          - How do spatial coordinates (latitude and longitude) correlate with resale price clustering across Singapore?
-
-
-
-<h1 align="center">Singapore HDB Resale Flats Dataset</h1>
-<img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
-
-
-## 📋 Dataset Overview
-
-* **File Name:** `product_sales_practice.csv`
-* **Time Horizon:** January 2026 – June 2026
-* **Target Category:** Electronics
-* **Key Entities:** Products, Sales Team, Regional Markets, Revenue Metrics
-
-  Link to Jupyter Notebook in Google Colab:
-  https://colab.research.google.com/drive/1zdPR2ig9qFp6Q1gPrZvky3Ac7UITW3Mv?usp=sharing
    
 ## 🗂️ Data Dictionary
 
