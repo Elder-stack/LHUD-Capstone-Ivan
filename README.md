@@ -11,47 +11,46 @@
 
 How to comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards
 
-## Research Objectives 
-1. Understand Housing DemandObjective: Analyze transaction volumes, buying patterns, and market activity across different periods (from 2000 onwards) to determine what drives buyer interest and market liquidity for public housing.
-2. Track Resale Price TrendsObjective: Examine historical price movements and macroeconomic trajectories of HDB resale flats to identify overall market cycles, price growth rates, and temporal appreciation patterns.
-3. Identify Property Valuation DriversObjective: Evaluate how structural and physical attributes—such as flat types, flat models, floor areas, storey ranges, and remaining lease periods or lease commencement dates—influence and determine property valuations.
-4. Evaluate Housing AffordabilityObjective: Assess the financial accessibility of HDB resale flats for buyers by analyzing transaction prices relative to property size, location, and temporal changes over the years.
-5. Analyze Location-Based Market Performance
-Objective: Compare real estate performance across different towns, streets, and geographic coordinates (utilizing spatial attributes like latitude and longitude) to uncover regional demand hotspots and geographic price variations.  
-
-
-<h1 align="center">Singapore HDB Resale Flats Dataset</h1>
-<img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
-
 ## Primary Research Objective
 To comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions from 2000 onwards to evaluate market demand, temporal price dynamics, property valuation drivers, housing affordability, and location-based performance across different towns, flat types, and lease durations.   
 
-Specific Research Objectives
+## Specific Research Objectives
 
 Objective 1: Housing Demand & Market ActivityGoal: Analyze transaction volumes and market liquidity trends across different years, months, and flat types.   
+         
          Key Questions:
          - How have trading volumes fluctuated from 2000 to the present?
          - Which flat types (e.g., 3-room, 4-room, 5-room, Executive) experience the highest buyer demand and turnover?
 
 Objective 2: Resale Price Trends & Macroeconomic CyclesGoal: Track historical price trajectories, growth rates, and market cycles for HDB resale flats.   
+         
          Key Questions:
          - What are the long-term compound annual growth rates (CAGR) of HDB resale prices?
          - How have government policy changes, cooling measures, or economic shifts impacted median and mean transaction prices over the decades?
 
 Objective 3: Property Valuation DriversGoal: Quantify the structural and physical attributes that drive flat valuations.   
+         
          Key Questions:
          - To what extent do floor area ($\text{m}^2$), storey range, and flat model impact the final resale price?
          - How does lease decay (remaining lease years vs. lease commencement date) affect property resale valuations over time?
 
 Objective 4: Housing Affordability & Spatial AccessibilityGoal: Assess the financial accessibility of public housing relative to property characteristics and temporal inflation.   
+         
          Key Questions:
          - How has the price-to-area ratio ($\text{SGD per m}^2$) evolved across different flat types?
          - What is the distribution of entry-level versus premium resale housing across various market segments?
 
 Objective 5: Location-Based Market PerformanceGoal: Compare real estate performance, price premiums, and geographic variations across different HDB towns and spatial coordinates.   
+         
          Key Questions:
          - Which towns command the highest price premiums and transaction densities?
          - How do spatial coordinates (latitude and longitude) correlate with resale price clustering across Singapore?
+
+
+
+<h1 align="center">Singapore HDB Resale Flats Dataset</h1>
+<img width="1317" height="742" alt="image" src="https://github.com/user-attachments/assets/fd2d0b2f-b7d0-4953-8c8b-868132c2485a" />
+
 
 ## 📋 Dataset Overview
 
