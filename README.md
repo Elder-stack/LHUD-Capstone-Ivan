@@ -128,17 +128,75 @@ Get started analyzing this dataset quickly using Python:
 
 ```python
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-# Load the dataset and drop completely empty structural lines
-df = pd.read_csv('sales_data.csv').dropna(how='all')
+# 1. Load the four CSV files
+df_2000 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/resale-flat-prices-based-on-approval-date-2000-feb-2012.csv')
+df_2012 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/resale-flat-prices-based-on-registration-date-from-mar-2012-to-dec-2014.csv')
+df_2015 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016.csv')
+df_2017 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv')
 
-# Convert date column to datetime object
-df['Date'] = pd.to_datetime(df['Date'])
+# 2. Combine all dataframes into one master dataset
+df_master = pd.concat([df_2000, df_2012, df_2015, df_2017], ignore_index=True)
 
-# Quick view of total sales revenue by product
-revenue_by_product = df.groupby('Product')['Sales'].sum().sort_values(ascending=False)
-print("Revenue by Product:\n", revenue_by_product)
+print(f"Master Dataset Shape: {df_master.shape}")
+print(df_master.head())
 ```
+<img width="464" height="300" alt="image" src="https://github.com/user-attachments/assets/fc7eb319-4756-4282-85d4-5130350b6648" />
+
+```python
+# Convert month to datetime and extract transaction year
+df_master['transaction_date'] = pd.to_datetime(df_master['month'])
+df_master['year'] = df_master['transaction_date'].dt.year
+
+# Ensure numeric columns are properly formatted
+numeric_cols = ['floor_area_sqm', 'resale_price', 'lease_commence_date']
+for col in numeric_cols:
+    if col in df_master.columns:
+        df_master[col] = pd.to_numeric(df_master[col], errors='coerce')
+
+# Handle remaining lease for 2017+ data if needed (extracting decimal years from strings)
+def parse_remaining_lease(val):
+    if pd.isna(val):
+        return None
+    if isinstance(val, (int, float)):
+        return float(val)
+    # If string like "61 years 04 months"
+    parts = str(val).split()
+    years = float(parts[0]) if len(parts) > 0 and parts[0].isdigit() else 0.0
+    months = float(parts[2]) if len(parts) > 2 and parts[2].isdigit() else 0.0
+    return years + (months / 12.0)
+
+if 'remaining_lease' in df_master.columns:
+    df_master['remaining_lease_years'] = df_master['remaining_lease'].apply(parse_remaining_lease)
+else:
+    # Approximate remaining lease if missing in older files
+    df_master['remaining_lease_years'] = 99 - (df_master['year'] - df_master['lease_commence_date'])
+```
+
+```python
+# Aggregate transaction count by year
+demand_trend = df_master.groupby('year').size().reset_index(name='transaction_count')
+
+plt.figure(figsize=(10, 5))
+sns.lineplot(data=demand_trend, x='year', y='transaction_count', marker='o', color='teal', linewidth=2.5)
+plt.title('HDB Resale Transaction Volume (2000 – Present)')
+plt.xlabel('Year')
+plt.ylabel('Number of Transactions')
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.show()
+```
+ <img width="879" height="470" alt="image" src="https://github.com/user-attachments/assets/e6951fbe-9f78-431f-afff-62e4c7ba6bc1" />
+
+
+
+
+
+
+
+
+
 
 ## 💡 Potential Projects & Analysis Directions
 1. **Sales Performance Dashboards:** Create interactive Tableau or Power BI visualizations mapping regional performance by salesperson.
