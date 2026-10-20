@@ -73,9 +73,23 @@ Table Description: HDB Resale FlatsThe primary transactional table within the da
 
 ## Column Definitions
 
-
-
-
+| Column Name | Data Type | Unit |
+| :--- | :--- | :--- |
+| **block** | Block number or identifier of the residential unit | Identifier |
+| **flat_model** | Model or design type of the residential flat (e.g., Improved, New Generation, Model A). | Category |
+| **flat_type** | Flat type classification (e.g., 1-room, 2-room, 3-room, 4-room, 5-room, Executive).    | Category |
+| **floor_area_sqm** | Floor area of the residential flat. | Square Metres |
+| **lease_commence_date** | Year in which the lease commenced | Year |
+| **month** | Transaction month (formatted as YYYY-MM). | Month |
+| **remaining_lease** | Remaining lease period of the residential flat (available in recent files as years/months or calculated). | Years |
+| **resale_price** | Final price at which the residential flat was resold | SGD |
+| **story_range** | Storey range in which the residential flat is located (e.g., 07 TO 09) | Category |
+| **street_name** | Street where the residential flat is located | Text |
+| **town** | Town in which the residential flat is situated (e.g., Ang Mo Kio, Tampines, Jurong West). | Text |
+| **street_lat** | Latitude coordinate of the street location. | Decimal Degrees |
+| **street_lon** | Longitude coordinate of the street location. | Decimal Degrees |
+| **town_lat** | Latitude coordinate of the town location | Decimal Degrees |
+| **town_lon** | Longitude coordinate of the town location. | Decimal Degrees |
 
 ## 🔍 Data Quality & Cleaning Notes
 
