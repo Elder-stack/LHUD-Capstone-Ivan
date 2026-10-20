@@ -64,20 +64,14 @@ Objective 5: Location-Based Market PerformanceGoal: Compare real estate performa
    
 ## 🗂️ Data Dictionary
 
-The dataset consists of the following 10 features:
+Here is the complete Data Dictionary for the Singapore HDB Resale Flats Analytics project, detailing the business context, table descriptions, and every attribute included in the dataset:   
 
-| Column Name | Data Type | Description | Example Value |
-| :--- | :--- | :--- | :--- |
-| **Order_ID** | String | A unique alphanumeric identifier for each transaction. | `ORD078` |
-| **Date** | Date | The transaction date formatted as `YYYY-MM-DD`. | `2026-04-09` |
-| **Product** | String | The name of the electronic item sold. | `Laptop`, `Mouse`, `Webcam` |
-| **Category** | String | The high-level category classification. | `Electronics` |
-| **Region** | String | The geographic sales territory. | `North`, `East`, `West`, `South` |
-| **Salesperson** | String | The name of the account representative. | `Alice`, `Bob`, `Charlie`, `Diana`, `Ethan` |
-| **Quantity** | Integer | The total units purchased in the order. | `7.0` |
-| **Unit_Price** | Float | The retail price per single unit of the product. | `997.67` |
-| **Discount** | Float | The promotional deduction percentage applied (0.0 to 0.15). | `0.15` (equivalent to 15%) |
-| **Sales** | Float | The final calculated gross revenue earned from the order. | `6983.69` |
+## Business Context
+The Singapore HDB Resale Flats dataset contains residential property resale transactions for Housing and Development Board (HDB) flats in Singapore. It supports real estate analytics, housing market research, property valuation studies, urban planning, and geographic trend analysis. By combining property characteristics, lease information, transaction values, and geographic attributes, analysts can evaluate housing demand, resale price trends, property affordability, and location-based market performance.   
+
+Table Description: HDB Resale FlatsThe primary transactional table within the dataset. Each record represents a single resale transaction for a residential flat.   
+
+Column DefinitionsColumn NameDescriptionUnitblockBlock number or identifier of the residential unit.   Identifier   flat_modelModel or design type of the residential flat (e.g., Improved, New Generation, Model A).   Category   flat_typeFlat type classification (e.g., 1-room, 2-room, 3-room, 4-room, 5-room, Executive).   Category   floor_area_sqmFloor area of the residential flat.   Square Metres   lease_commence_dateYear in which the lease commenced.   Year   monthTransaction month (formatted as YYYY-MM).   Month   remaining_leaseRemaining lease period of the residential flat (available in recent files as years/months or calculated).   Years   resale_priceFinal price at which the residential flat was resold.   SGD   story_rangeStorey range in which the residential flat is located (e.g., 07 TO 09).   Category   street_nameStreet where the residential flat is located.   Text   townTown in which the residential flat is situated (e.g., Ang Mo Kio, Tampines, Jurong West).   Text   street_latLatitude coordinate of the street location.   Decimal Degrees   street_lonLongitude coordinate of the street location.   Decimal Degrees   town_latLatitude coordinate of the town location.   Decimal Degrees   town_lonLongitude coordinate of the town location.   Decimal Degrees   
 
 ## 🔍 Data Quality & Cleaning Notes
 
