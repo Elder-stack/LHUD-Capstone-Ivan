@@ -93,12 +93,34 @@ Table Description: HDB Resale FlatsThe primary transactional table within the da
 
 ## 🔍 Data Quality & Cleaning Notes
 
-If you are using this dataset for data cleaning projects, please note that it intentionally contains realistic real-world data anomalies:
-* **Missing Values (NaNs):** Features like `Region`, `Salesperson`, `Unit_Price`, `Discount`, and `Sales` contain scattered missing fields (e.g., missing revenue values or unattributed regional boundaries).
-* **Calculated Columns:** The `Sales` column follows the general formula:  
-  \[\text{Sales} = (\text{Quantity} \times \text{Unit\_Price}) \times (1 - \text{Discount})\]
-  This relationship can be exploited to programmatically restore missing metrics.
-* **Empty Rows:** The raw structure contains blank structural divider rows (`,,,,,,,,,`) that should be filtered out during preprocessing.
+Here are the Data Quality & Cleaning Notes for the historical Singapore HDB Resale Flats dataset. These notes outline structural variations across the time-period files, data anomalies, missing value handling, and standardization steps required prior to deep analysis.
+
+1. Schema & File Harmonization
+The historical dataset is split into four distinct CSV files covering different chronological periods:
+ * File 1 (2000 – Feb 2012): 369,651 rows, 10 columns (missing remaining_lease)
+ * File 2 (Mar 2012 – Dec 2014): 52,203 rows, 10 columns (missing remaining_lease)
+ * File 3 (2015 – 2016): 37,153 rows, 11 columns (includes numeric remaining_lease)
+ * File 4 (2017 – Present): 169,584 rows, 11 columns (includes string-formatted remaining_lease, e.g., "61 years 04 months")
+
+Cleaning Action:
+When concatenating the datasets into a master dataframe, standardize column names and handle schema mismatches (e.g., computing or parsing remaining_lease uniformly across all periods).
+
+2. Missing Values & Data Integrity
+ * Null Check: Across all four raw CSV files, there are 0 explicit null/NaN values in any standard column.
+ * Implicit Missingness: The primary "missing" attribute is the remaining_lease field in datasets prior to 2015.
+ * Correction Strategy: Backfill or calculate remaining lease dynamically using the formula: $\text{Remaining Lease} = 99 - (\text{Transaction Year} - \text{Lease Commence Date})$, or parse string values from post-2017 records into decimal years.
+
+3. Data Type Standardization
+To ensure accurate aggregations, filtering, and modeling, enforce the following data type conversions during ingestion:
+ * month / transaction_date: Convert from string (YYYY-MM) to datetime objects (pd.to_datetime). Extract year and month as discrete integer columns for temporal grouping.
+ * resale_price & floor_area_sqm: Ensure numeric types (float or int) for mathematical operations, price-per-sqm calculations, and statistical summaries.
+ * lease_commence_date: Ensure integer format to accurately calculate property age and lease decay.
+ * Categorical Features (town, flat_type, flat_model, story_range): Convert to string/categorical type to optimize memory usage and group-by performance.
+
+4. Data Anomalies & Edge Cases
+ * Lease Format Inconsistencies: Post-2017 records store remaining lease as descriptive strings (e.g., "61 years 04 months"), whereas 2015–2016 records store integers (e.g., 70). A custom parsing function is required to convert string formats into decimal floats.
+ * Storey Range Formatting: Storey ranges are formatted as text intervals (e.g., "07 TO 09" or "01 TO 03"). For advanced valuation modeling or regression, consider engineering features for lower bound, upper bound, or median storey.
+ * Spatial Coordinates: Note that town-level and street-level coordinate attributes (street_lat, street_lon, town_lat, town_lon) may require validation for missing spatial projections or outlier geo-mapping if performing geospatial clustering.
 
 ## 🛠️ Usage Example (Python & Pandas)
 
