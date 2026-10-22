@@ -16,31 +16,36 @@ To comprehensively analyze historical Singapore Housing and Development Board (H
 
 ## Specific Research Objectives
 
-Objective 1: Housing Demand & Market ActivityGoal: Analyze transaction volumes and market liquidity trends across different years, months, and flat types.   
+Objective 1: Housing Demand & Market Activity
+* Goal: Analyze transaction volumes and market liquidity trends across different years, months, and flat types.   
          
          Key Questions:
          - How have trading volumes fluctuated from 2000 to the present?
          - Which flat types (e.g., 3-room, 4-room, 5-room, Executive) experience the highest buyer demand and turnover?
 
-Objective 2: Resale Price Trends & Macroeconomic CyclesGoal: Track historical price trajectories, growth rates, and market cycles for HDB resale flats.   
+Objective 2: Resale Price Trends & Macroeconomic Cycles
+* Goal: Track historical price trajectories, growth rates, and market cycles for HDB resale flats.   
          
          Key Questions:
          - What are the long-term compound annual growth rates (CAGR) of HDB resale prices?
          - How have government policy changes, cooling measures, or economic shifts impacted median and mean transaction prices over the decades?
 
-Objective 3: Property Valuation DriversGoal: Quantify the structural and physical attributes that drive flat valuations.   
+Objective 3: Property Valuation Drivers
+* Goal: Quantify the structural and physical attributes that drive flat valuations.   
          
          Key Questions:
          - To what extent do floor area ($\text{m}^2$), storey range, and flat model impact the final resale price?
          - How does lease decay (remaining lease years vs. lease commencement date) affect property resale valuations over time?
 
-Objective 4: Housing Affordability & Spatial AccessibilityGoal: Assess the financial accessibility of public housing relative to property characteristics and temporal inflation.   
+Objective 4: Housing Affordability & Spatial Accessibility
+* Goal: Assess the financial accessibility of public housing relative to property characteristics and temporal inflation.   
          
          Key Questions:
          - How has the price-to-area ratio ($\text{SGD per m}^2$) evolved across different flat types?
          - What is the distribution of entry-level versus premium resale housing across various market segments?
 
-Objective 5: Location-Based Market PerformanceGoal: Compare real estate performance, price premiums, and geographic variations across different HDB towns and spatial coordinates.   
+Objective 5: Location-Based Market Performance
+* Goal: Compare real estate performance, price premiums, and geographic variations across different HDB towns and spatial coordinates.   
          
          Key Questions:
          - Which towns command the highest price premiums and transaction densities?
