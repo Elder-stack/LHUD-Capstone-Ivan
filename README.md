@@ -1,275 +1,135 @@
-* **Prepared By: Ivan Ho**
-* **Dataset Used: Real Estate Resale Flats**
-
 # Singapore HDB Resale Flats Analytics
 
-<p align="center">
- <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a60ed822-80d0-48c8-9212-7523d3e1e986" />
-</p>
+**Prepared By:** Ivan Ho  
+**Course:** NTUC LearningHub SCTP Associate Data Analyst  
+**Project Type:** Business Analytics  
+**Tools:** Python, Google Colab, Pandas, Matplotlib, Power BI (planned)
 
-## Problem Statement 
+## 1. Problem Statement
 
-How to comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards
+How can historical Singapore HDB resale transaction data be analysed to understand housing demand, resale price trends, property valuation factors, housing affordability and market performance across different towns, flat types and lease periods?
 
-## Primary Research Objective
-To comprehensively analyze historical Singapore Housing and Development Board (HDB) resale flat transactions from 2000 onwards to evaluate market demand, temporal price dynamics, property valuation drivers, housing affordability, and location-based performance across different towns, flat types, and lease durations.   
+## 2. Research Objectives
 
-## Specific Research Objectives
+**Objective 1: Housing Demand and Market Activity**
 
-Objective 1: Housing Demand & Market Activity
-* Goal: Analyze transaction volumes and market liquidity trends across different years, months, and flat types.   
-         
-         Key Questions:
-         - How have trading volumes fluctuated from 2000 to the present?
-         - Which flat types (e.g., 3-room, 4-room, 5-room, Executive) experience the highest buyer demand and turnover?
+Analyse HDB resale transaction volumes over time and identify changes in market activity across different flat types.
 
-Objective 2: Resale Price Trends & Macroeconomic Cycles
-* Goal: Track historical price trajectories, growth rates, and market cycles for HDB resale flats.   
-         
-         Key Questions:
-         - What are the long-term compound annual growth rates (CAGR) of HDB resale prices?
-         - How have government policy changes, cooling measures, or economic shifts impacted median and mean transaction prices over the decades?
+**Objective 2: Resale Price Trends**
 
-Objective 3: Property Valuation Drivers
-* Goal: Quantify the structural and physical attributes that drive flat valuations.   
-         
-         Key Questions:
-         - To what extent do floor area ($\text{m}^2$), storey range, and flat model impact the final resale price?
-         - How does lease decay (remaining lease years vs. lease commencement date) affect property resale valuations over time?
+Examine historical HDB resale price trends and identify periods of increasing or decreasing prices.
 
-Objective 4: Housing Affordability & Spatial Accessibility
-* Goal: Assess the financial accessibility of public housing relative to property characteristics and temporal inflation.   
-         
-         Key Questions:
-         - How has the price-to-area ratio ($\text{SGD per m}^2$) evolved across different flat types?
-         - What is the distribution of entry-level versus premium resale housing across various market segments?
+**Objective 3: Property Valuation Drivers**
 
-Objective 5: Location-Based Market Performance
-* Goal: Compare real estate performance, price premiums, and geographic variations across different HDB towns and spatial coordinates.   
-         
-         Key Questions:
-         - Which towns command the highest price premiums and transaction densities?
-         - How do spatial coordinates (latitude and longitude) correlate with resale price clustering across Singapore?
-   
-## 🗂️ Data Dictionary
+Examine how floor area, flat type, storey range and remaining lease relate to resale prices.
 
-Here is the complete Data Dictionary for the Singapore HDB Resale Flats Analytics project, detailing the business context, table descriptions, and every attribute included in the dataset:   
+**Objective 4: Housing Affordability**
 
-## Business Context
-The Singapore HDB Resale Flats dataset contains residential property resale transactions for Housing and Development Board (HDB) flats in Singapore. It supports real estate analytics, housing market research, property valuation studies, urban planning, and geographic trend analysis. By combining property characteristics, lease information, transaction values, and geographic attributes, analysts can evaluate housing demand, resale price trends, property affordability, and location-based market performance.   
+Compare resale prices and price per square metre across flat types and locations to understand differences in relative housing costs.
 
-Table Description: HDB Resale FlatsThe primary transactional table within the dataset. Each record represents a single resale transaction for a residential flat.   
+**Objective 5: Location-Based Market Performance**
 
-## Column Definitions
+Compare transaction activity, median resale prices and price per square metre across different HDB towns.
 
-| Column Name | Data Type | Unit |
-| :--- | :--- | :--- |
-| **block** | Block number or identifier of the residential unit | Identifier |
-| **flat_model** | Model or design type of the residential flat (e.g., Improved, New Generation, Model A). | Category |
-| **flat_type** | Flat type classification (e.g., 1-room, 2-room, 3-room, 4-room, 5-room, Executive).    | Category |
-| **floor_area_sqm** | Floor area of the residential flat. | Square Metres |
-| **lease_commence_date** | Year in which the lease commenced | Year |
-| **month** | Transaction month (formatted as YYYY-MM). | Month |
-| **remaining_lease** | Remaining lease period of the residential flat (available in recent files as years/months or calculated). | Years |
-| **resale_price** | Final price at which the residential flat was resold | SGD |
-| **story_range** | Storey range in which the residential flat is located (e.g., 07 TO 09) | Category |
-| **street_name** | Street where the residential flat is located | Text |
-| **town** | Town in which the residential flat is situated (e.g., Ang Mo Kio, Tampines, Jurong West). | Text |
-| **street_lat** | Latitude coordinate of the street location. | Decimal Degrees |
-| **street_lon** | Longitude coordinate of the street location. | Decimal Degrees |
-| **town_lat** | Latitude coordinate of the town location | Decimal Degrees |
-| **town_lon** | Longitude coordinate of the town location. | Decimal Degrees |
+## 3. Dataset Overview
 
-## 🔍 Data Quality & Cleaning Notes
+The project uses four historical HDB resale transaction datasets.
 
-Here are the Data Quality & Cleaning Notes for the historical Singapore HDB Resale Flats dataset. These notes outline structural variations across the time-period files, data anomalies, missing value handling, and standardization steps required prior to deep analysis.
+| Dataset Period | Records |
+|---|---:|
+| 2000 – February 2012 | 369,651 |
+| March 2012 – December 2014 | 52,203 |
+| January 2015 – December 2016 | 37,153 |
+| January 2017 – January 2024 | 169,584 |
+| **Total** | **628,591** |
 
-1. Schema & File Harmonization
-The historical dataset is split into four distinct CSV files covering different chronological periods:
- * File 1 (2000 – Feb 2012): 369,651 rows, 10 columns (missing remaining_lease)
- * File 2 (Mar 2012 – Dec 2014): 52,203 rows, 10 columns (missing remaining_lease)
- * File 3 (2015 – 2016): 37,153 rows, 11 columns (includes numeric remaining_lease)
- * File 4 (2017 – Present): 169,584 rows, 11 columns (includes string-formatted remaining_lease, e.g., "61 years 04 months")
+The four datasets were combined to allow analysis across a longer period.
 
-Cleaning Action:
-When concatenating the datasets into a master dataframe, standardize column names and handle schema mismatches (e.g., computing or parsing remaining_lease uniformly across all periods).
+The main columns include transaction month, town, flat type, floor area, flat model, storey range, lease commencement date, remaining lease and resale price.
 
-2. Missing Values & Data Integrity
- * Null Check: Across all four raw CSV files, there are 0 explicit null/NaN values in any standard column.
- * Implicit Missingness: The primary "missing" attribute is the remaining_lease field in datasets prior to 2015.
- * Correction Strategy: Backfill or calculate remaining lease dynamically using the formula: $\text{Remaining Lease} = 99 - (\text{Transaction Year} - \text{Lease Commence Date})$, or parse string values from post-2017 records into decimal years.
+The main analysis covers **2000–2023**, excluding the incomplete year 2024 from full-year comparisons.
 
-3. Data Type Standardization
-To ensure accurate aggregations, filtering, and modeling, enforce the following data type conversions during ingestion:
- * month / transaction_date: Convert from string (YYYY-MM) to datetime objects (pd.to_datetime). Extract year and month as discrete integer columns for temporal grouping.
- * resale_price & floor_area_sqm: Ensure numeric types (float or int) for mathematical operations, price-per-sqm calculations, and statistical summaries.
- * lease_commence_date: Ensure integer format to accurately calculate property age and lease decay.
- * Categorical Features (town, flat_type, flat_model, story_range): Convert to string/categorical type to optimize memory usage and group-by performance.
+## 4. Data Preparation
 
-4. Data Anomalies & Edge Cases
- * Lease Format Inconsistencies: Post-2017 records store remaining lease as descriptive strings (e.g., "61 years 04 months"), whereas 2015–2016 records store integers (e.g., 70). A custom parsing function is required to convert string formats into decimal floats.
- * Storey Range Formatting: Storey ranges are formatted as text intervals (e.g., "07 TO 09" or "01 TO 03"). For advanced valuation modeling or regression, consider engineering features for lower bound, upper bound, or median storey.
- * Spatial Coordinates: Note that town-level and street-level coordinate attributes (street_lat, street_lon, town_lat, town_lon) may require validation for missing spatial projections or outlier geo-mapping if performing geospatial clustering.
+Data preparation was carried out using Python in Google Colab.
 
-## 🛠️ Usage Example (Python & Pandas)
+The main steps included:
 
-Get started analyzing this dataset quickly using Python:
+1. Loading and combining the four original datasets using Pandas.
+2. Checking missing values, duplicate records and data types.
+3. Estimating missing remaining lease values using lease commencement dates and a 99-year lease assumption.
+4. Checking unusual resale prices, floor areas and lease values.
+5. Converting transaction dates into a suitable format.
+6. Calculating price per square metre for comparisons.
+7. Preparing a separate analysis dataset covering 2000–2023.
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+**Data Quality Notes:**
 
-# 1. Load the four CSV files
-df_2000 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/resale-flat-prices-based-on-approval-date-2000-feb-2012.csv')
-df_2012 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/resale-flat-prices-based-on-registration-date-from-mar-2012-to-dec-2014.csv')
-df_2015 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016.csv')
-df_2017 = pd.read_csv('https://raw.githubusercontent.com/Elder-stack/LHUD-Capstone-Ivan/refs/heads/main/ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv')
+- The original remaining lease column contained 421,854 missing values.
+- There were 1,066 identical records, which were retained because a unique transaction ID was unavailable.
+- Fifteen unusual estimated lease values were marked as missing for lease-specific analysis.
+- Original CSV files were preserved without modification.
 
-# 2. Combine all dataframes into one master dataset
-df_master = pd.concat([df_2000, df_2012, df_2015, df_2017], ignore_index=True)
+The prepared analysis dataset contains **628,180 records**.
 
-print(f"Master Dataset Shape: {df_master.shape}")
-print(df_master.head())
-```
-<img width="464" height="300" alt="image" src="https://github.com/user-attachments/assets/fc7eb319-4756-4282-85d4-5130350b6648" />
+## 5. Exploratory Data Analysis (EDA)
 
-```python
-# Convert month to datetime and extract transaction year
-df_master['transaction_date'] = pd.to_datetime(df_master['month'])
-df_master['year'] = df_master['transaction_date'].dt.year
+Python was used to analyse the following areas:
 
-# Ensure numeric columns are properly formatted
-numeric_cols = ['floor_area_sqm', 'resale_price', 'lease_commence_date']
-for col in numeric_cols:
-    if col in df_master.columns:
-        df_master[col] = pd.to_numeric(df_master[col], errors='coerce')
+| Analysis | Method |
+|---|---|
+| Resale market activity | Yearly transaction counts |
+| Resale price trends | Median resale prices by year |
+| Flat type comparison | Median resale prices and price per sqm |
+| Town comparison | Median resale prices and price per sqm |
+| Floor area and resale price | Scatter plot and correlation |
+| Remaining lease and resale price | Scatter plot and correlation |
+| Storey range comparison | Median resale prices by storey range |
 
-# Handle remaining lease for 2017+ data if needed (extracting decimal years from strings)
-def parse_remaining_lease(val):
-    if pd.isna(val):
-        return None
-    if isinstance(val, (int, float)):
-        return float(val)
-    # If string like "61 years 04 months"
-    parts = str(val).split()
-    years = float(parts[0]) if len(parts) > 0 and parts[0].isdigit() else 0.0
-    months = float(parts[2]) if len(parts) > 2 and parts[2].isdigit() else 0.0
-    return years + (months / 12.0)
+Pandas was used for data preparation and calculations, while Matplotlib was used to create charts.
 
-if 'remaining_lease' in df_master.columns:
-    df_master['remaining_lease_years'] = df_master['remaining_lease'].apply(parse_remaining_lease)
-else:
-    # Approximate remaining lease if missing in older files
-    df_master['remaining_lease_years'] = 99 - (df_master['year'] - df_master['lease_commence_date'])
-```
+## 6. Initial Findings
 
-```python
-# Aggregate transaction count by year
-demand_trend = df_master.groupby('year').size().reset_index(name='transaction_count')
+The analysis identified several trends:
 
-plt.figure(figsize=(10, 5))
-sns.lineplot(data=demand_trend, x='year', y='transaction_count', marker='o', color='teal', linewidth=2.5)
-plt.title('HDB Resale Transaction Volume (2000 – Present)')
-plt.xlabel('Year')
-plt.ylabel('Number of Transactions')
-plt.grid(True, linestyle='--', alpha=0.6)
-plt.show()
-```
- <img width="879" height="470" alt="image" src="https://github.com/user-attachments/assets/e6951fbe-9f78-431f-afff-62e4c7ba6bc1" />
+- The median resale price increased from S$239,000 in 2000 to S$550,000 in 2023.
+- Resale transaction volumes fluctuated over the years, with the highest recorded annual volume in 2001.
+- Larger flats generally had higher resale prices.
+- Floor area had a positive correlation of approximately 0.683 with resale price in 2023.
+- Median resale prices and price per square metre varied across HDB towns.
+- Higher storey ranges generally showed higher median resale prices in 2023.
 
-```python
-# Calculate median resale price and floor area price per sqm by year
-price_trend = df_master.groupby('year')['resale_price'].agg(['median', 'mean']).reset_index()
+These are descriptive findings based on the historical dataset.
 
-plt.figure(figsize=(10, 5))
-sns.lineplot(data=price_trend, x='year', y='median', marker='s', color='coral', linewidth=2.5)
-plt.title('Median HDB Resale Price Over Time')
-plt.xlabel('Year')
-plt.ylabel('Median Resale Price (SGD)')
-plt.grid(True, linestyle='--', alpha=0.6)
-plt.show()
-```
-<img width="888" height="470" alt="image" src="https://github.com/user-attachments/assets/c2e5e9d7-5e06-43d0-bec5-99eb8b25cbeb" />
+## 7. Limitations
 
-```python
-# Compare resale price distribution across flat types
-plt.figure(figsize=(12, 6))
-sns.boxplot(data=df_master, x='flat_type', y='resale_price', palette='Set2')
-plt.title('Resale Price Distribution by Flat Type')
-plt.xlabel('Flat Type')
-plt.ylabel('Resale Price (SGD)')
-plt.xticks(rotation=45)
-plt.show()
-```
-<img width="1001" height="639" alt="image" src="https://github.com/user-attachments/assets/c19151b9-80b1-4176-b4a8-8ab0b8e22271" />
+- Missing historical remaining lease values were estimated rather than taken from official transaction records.
+- Transaction counts indicate resale market activity but do not measure total housing demand.
+- Price per square metre measures relative housing costs, not affordability based on household income.
+- The analysis uses historical data through 2023 and does not represent current market conditions.
 
-```python
-# Find top towns by average resale price and transaction volume
-town_performance = df_master.groupby('town').agg(
-    avg_price=('resale_price', 'mean'),
-    total_transactions=('town', 'count')
-).reset_index().sort_values(by='avg_price', ascending=False)
+## 8. Project Progress
 
-print("Top 10 Towns by Average Resale Price:")
-print(town_performance.head(10))
-```
-<img width="353" height="180" alt="image" src="https://github.com/user-attachments/assets/bab22f03-66a5-4c83-b7da-6dc5c0a94344" />
+| Task | Status |
+|---|---|
+| Upload original datasets to GitHub | Completed |
+| Data preparation and cleaning checks | Completed |
+| Exploratory data analysis | Completed |
+| Python charts | Completed |
+| Power BI dashboard | In progress |
+| Business insights and recommendations | Pending |
+| Final presentation | Pending |
 
-## 💡 Potential Projects & Analysis Directions
-Base on the compelling Potential Projects & Analysis Directions designed to leverage your historical Singapore HDB resale flat dataset (~628,591 transactions spanning 2000 onwards). These project tracks align directly with your analytical objectives and provide clear roadmaps for data exploration, modeling, and visualization.
+## 9. Next Steps
 
-Project Track 1: Predictive Property Valuation Model (Machine Learning)
-* Objective: Build a regression model to predict HDB resale prices based on structural, temporal, and spatial attributes.
-* Key Features to Engineer:
+The next stage is to develop a Power BI dashboard to present the analysis results using charts, key metrics and interactive filters.
 
-  1. Property Age / Remaining Lease: Calculate exact remaining lease years at the time of transaction.
-  
-  2. Storey Midpoint: Convert range strings (e.g., "07 TO 09") into numeric midpoints (8).
-  
-  3. Spatial Proximity / Town Premiums: One-hot encode towns or compute distance metrics relative to the Core Central Region (CCR).
-  
-* Modeling Approaches: Random Forest Regressor, XGBoost, or LightGBM to capture non-linear relationships between floor area, lease decay, and price.
+The final stage will be to summarise the business insights, provide recommendations and prepare the capstone presentation.
 
-Project Track 2: Lease Decay & Depreciation Impact Study
-* Objective: Quantify how a flat's remaining lease affects its market value, especially for older flats approaching the 99-year leasehold limit.
-* Analytical Focus:
+## 10. Project Files
 
-  1. Group transactions by remaining lease brackets (e.g., 90+ years, 70–89 years, <70 years).
-  
-  2. Calculate the price-per-square-metre discount associated with each decade of lease aging.
-  
-  3. Compare depreciation rates across mature estates (e.g., Queenstown, Tampines) versus non-mature estates (e.g., Sengkang, Punggol).
+- Four original HDB resale CSV datasets
+- `RealEstateAnalysis.ipynb` – Python data preparation and exploratory analysis
+- `README.md` – Project overview and progress documentation
 
-Project Track 3: Geographic & Spatial Heatmapping (GIS Analysis)
-* Objective: Uncover spatial price clustering and identify HDB resale demand hotspots across Singapore using coordinate data (street_lat, street_lon, town_lat, town_lon).
-* Analytical Focus:
-
-  1. Plot transaction densities using geospatial scatter plots or hexbin maps.
-  
-  2. Analyze price gradients moving outward from the city center.
-  
-  3. Examine town-level affordability variations mapped against geographic coordinates.
-
-Project Track 4: Macroeconomic & Policy Impact Dashboard
-* Objective: Analyze how historical cooling measures, government housing grants, and broader economic cycles (e.g., 2008 Financial Crisis, post-2020 pandemic property boom) influenced HDB resale price indices and transaction volumes.
-* Analytical Focus:
-
-  1. Construct a custom HDB Resale Price Index (median price per sqm indexed to year 2000 = 100).
-  
-  2. Analyze volume spikes versus price appreciation phases.
-  
-  3. Examine shifts in demand across flat types (e.g., rising popularity of larger 4-room and 5-room flats vs. 3-room flats).
-
-Project Track 5: Automated Interactive HDB Analytics DashboardObjective: Build an interactive Power BI or Streamlit dashboard enabling users to filter resale transactions by town, flat type, date range, and floor area to instantly view pricing benchmarks.
-* Key Visualizations:
-
-  1. KPI Cards: Median resale price, total transaction volume, average price per sqm.
-  
-  2. Trend Lines: Multi-year price trajectory by flat type.
-  
-  3. Box Plots: Price distribution across different towns and storey ranges.
-  
-  4. Scatter Plot: Floor area ($\text{m}^2$) versus Resale Price (SGD) colored by remaining lease
-
-
+**Data Source:** Singapore HDB Resale Flat Prices datasets, available through [data.gov.sg](https://data.gov.sg/).
