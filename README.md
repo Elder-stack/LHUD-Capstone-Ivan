@@ -191,7 +191,7 @@ The dataset was split into 80% training and 20% testing data.
 **Observation:**
 
 Floor area has a positive relationship with resale price, but floor area alone is not enough to predict prices accurately. Other factors such as location, remaining lease and storey range may also influence resale prices.
-<img width="864" height="560" alt="image" src="https://github.com/user-attachments/assets/d77acb9c-4bdb-493f-9ab5-f83c0e271fad" />
+<img width="518" height="336" alt="image" src="https://github.com/user-attachments/assets/d77acb9c-4bdb-493f-9ab5-f83c0e271fad" />
 
 ---
 
