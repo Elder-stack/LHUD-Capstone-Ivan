@@ -185,21 +185,22 @@ The Python notebook is available in this repository:
 
 ---
 
-## Initial Findings
+## Observations by Research Objective
 
-Based on the historical analysis:
+**Objective 1: Housing Demand & Market Activity**
+> HDB resale transaction volumes fluctuated between 2000 and 2023, with the highest volume of 38,055 transactions recorded in 2001. Four-room flats recorded the highest transaction volume.
 
-- Median HDB resale prices increased from **S$239,000 in 2000 to S$550,000 in 2023**.
-- Annual resale transaction volume fluctuated, with the highest recorded volume of **38,055 transactions in 2001**.
-- Larger flats generally had higher resale prices.
-- Floor area showed a positive correlation of approximately **0.683** with resale price in 2023.
-- Estimated remaining lease showed a positive correlation of approximately **0.367** with resale price in 2023.
-- Bukit Timah had the highest median resale price in 2023 at **S$825,500**.
-- Queenstown had the highest median price per square metre in 2023 at approximately **S$8,144.96**.
-- Higher storey ranges generally showed higher median resale prices in 2023.
-- One-room flats had the highest median price per square metre among flat types in 2023, although they had the lowest median total resale price.
+**Objective 2: Resale Price Trends**
+> Median resale prices increased from S$239,000 in 2000 to S$550,000 in 2023, showing an overall upward trend.
 
-These findings describe patterns in the historical transaction data. They do not establish that individual property characteristics directly cause price changes.
+**Objective 3: Property Valuation Drivers**
+> Larger flats generally had higher resale prices. Floor area showed a positive correlation of 0.683 with resale price in 2023, while estimated remaining lease showed a weaker positive correlation of 0.367.
+
+**Objective 4: Housing Affordability & Relative Housing Costs**
+> Resale prices and price per square metre varied across flat types and towns. Queenstown recorded a median price of approximately S$8,145 per sqm in 2023, indicating relatively higher housing costs.
+
+**Objective 5: Location-Based Market Performance**
+> Resale market activity and prices differed across HDB towns. Bukit Timah recorded the highest median resale price of S$825,500 in 2023.
 
 ---
 
