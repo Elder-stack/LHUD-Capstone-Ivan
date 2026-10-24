@@ -202,6 +202,13 @@ These findings describe patterns in the historical transaction data. They do not
 
 ---
 
+## Power BI Dashboard
+The Power BI dashboard presents HDB resale market trends and property comparisons across the five research objectives.
+### Dashboard 1: HDB Resale Market Overview (Objectives 1 & 2)
+<img width="977" height="541" alt="image" src="https://github.com/user-attachments/assets/036e243f-e6f9-4669-ab5c-03ac2784c9f1" />
+
+---
+
 ## Project Limitations
 
 - Some historical remaining lease values were missing and had to be estimated.
