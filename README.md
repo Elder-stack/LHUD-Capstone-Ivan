@@ -223,15 +223,9 @@ These findings describe patterns in the historical transaction data. They do not
 | Data quality checks | Completed |
 | Exploratory Data Analysis | Completed |
 | Python charts and analysis | Completed |
-| Power BI Dashboard | Next Stage |
+| Power BI Dashboard | Completed |
 | Business insights and recommendations | In Progress |
 | Final presentation | Pending |
-
-## Next Steps
-
-The next stage is to develop a Power BI dashboard with key metrics, charts and filters for exploring HDB resale prices and market activity.
-
-After the dashboard is completed, the findings will be summarised into business insights and recommendations for the final capstone presentation.
 
 ## Project Files
 
@@ -240,6 +234,8 @@ After the dashboard is completed, the findings will be summarised into business 
 - `resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016.csv`
 - `ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv`
 - `RealEstateAnalysis.ipynb`
+- `HDB_Resale_Prepared.csv`
+- `HDB_Resale_Analytics.pbix`
 - `README.md`
 
 **Data Source:** Singapore HDB Resale Flat Prices, available from [data.gov.sg](https://data.gov.sg/).
