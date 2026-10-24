@@ -207,6 +207,9 @@ The Power BI dashboard presents HDB resale market trends and property comparison
 ### Dashboard 1: HDB Resale Market Overview (Objectives 1 & 2)
 <img width="977" height="541" alt="image" src="https://github.com/user-attachments/assets/036e243f-e6f9-4669-ab5c-03ac2784c9f1" />
 
+### Dashboard 2: Property & Town Analysis (Objectives 3, 4 & 5)
+<img width="888" height="545" alt="image" src="https://github.com/user-attachments/assets/140a1027-1b8e-4b56-bf5a-4e439251f964" />
+
 ---
 
 ## Project Limitations
