@@ -14,11 +14,11 @@
 
 How to comprehensively analyse historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards.
 
-## Primary Research Objective
+## Main Objective
 
 To comprehensively analyse historical Singapore Housing and Development Board (HDB) resale flat transactions from 2000 onwards to evaluate market demand, resale price trends, property valuation drivers, housing affordability, and location-based performance across different towns, flat types, and lease durations.
 
-## Specific Research Objectives
+## 5 Research Objectives
 
 ### Objective 1: Housing Demand & Market Activity
 
@@ -185,7 +185,7 @@ The Python notebook is available in this repository:
 
 ---
 
-## Observations by Research Objective
+## Key Findings by Objective
 
 **Objective 1: Housing Demand & Market Activity**
 > HDB resale transaction volumes fluctuated between 2000 and 2023, with the highest volume of 38,055 transactions recorded in 2001. Four-room flats recorded the highest transaction volume.
