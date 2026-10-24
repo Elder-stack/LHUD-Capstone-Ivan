@@ -6,7 +6,8 @@
 # Singapore HDB Resale Flats Analytics
 
 <p align="center">
-  <img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/bbb991c9-761e-4913-8ac6-f4516e6fd5c8" />
+<img width="672" height="349" alt="image" src="https://github.com/user-attachments/assets/460bf08b-5a45-41ce-9e9f-f4f1b4391ab7" />
+
 </p>
 
 ## Problem Statement
