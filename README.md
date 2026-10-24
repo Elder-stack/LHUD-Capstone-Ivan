@@ -243,8 +243,9 @@ The Power BI dashboard presents HDB resale market trends and property comparison
 | Data quality checks | Completed |
 | Exploratory Data Analysis | Completed |
 | Python charts and analysis | Completed |
+| Predictive Analytics – Linear Regression | Completed |
 | Power BI Dashboard | Completed |
-| Business insights and recommendations | In Progress |
+| Business insights and recommendations | Work In Progress |
 | Final presentation | Pending |
 
 ## Project Files
