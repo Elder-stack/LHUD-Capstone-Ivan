@@ -11,11 +11,9 @@
 </p>
 
 ## Problem Statement
-
 How to comprehensively analyse historical Singapore Housing and Development Board (HDB) resale flat transactions to understand housing demand, resale price trends, property valuation drivers, housing affordability, and location-based market performance across different towns, flat types, and lease periods from 2000 onwards.
 
 ## Main Objective
-
 To comprehensively analyse historical Singapore Housing and Development Board (HDB) resale flat transactions from 2000 onwards to evaluate market demand, resale price trends, property valuation drivers, housing affordability, and location-based performance across different towns, flat types, and lease durations.
 
 ## 5 Research Objectives
@@ -63,13 +61,11 @@ To comprehensively analyse historical Singapore Housing and Development Board (H
 ---
 
 ## Data Dictionary
-
 The Singapore HDB Resale Flats dataset contains historical resale transactions of Housing and Development Board flats in Singapore.
 
 Each record represents a resale transaction and includes information such as the transaction month, town, flat type, floor area, remaining lease and resale price.
 
 ### Business Context
-
 The dataset supports analysis of resale market activity, historical price trends, property characteristics, relative housing costs and differences between HDB towns.
 
 ### Column Definitions
@@ -163,7 +159,6 @@ This allows comparison of relative resale costs across flats of different sizes.
 ---
 
 ## Exploratory Data Analysis (EDA)
-
 Python, Pandas and Matplotlib were used to perform exploratory data analysis.
 
 The main analysis covered:
@@ -182,6 +177,20 @@ The analysis was carried out mainly using descriptive statistics, bar charts, li
 The Python notebook is available in this repository:
 
 [RealEstateAnalysis.ipynb](RealEstateAnalysis.ipynb)
+
+---
+## Predictive Analytics – Simple Linear Regression
+A simple Linear Regression model was used to predict HDB resale prices based on floor area using 2023 transaction data.
+
+The dataset was split into 80% training and 20% testing data.
+
+**Model Results:**
+- **R² Score:** 0.483 – The model explains approximately 48.3% of the variation in resale prices.
+- **Mean Absolute Error (MAE):** S$91,316.53 – Predictions differ from actual resale prices by approximately S$91,317 on average.
+
+**Observation:**
+
+Floor area has a positive relationship with resale price, but floor area alone is not enough to predict prices accurately. Other factors such as location, remaining lease and storey range may also influence resale prices.
 
 ---
 
@@ -215,7 +224,6 @@ The Power BI dashboard presents HDB resale market trends and property comparison
 ---
 
 ## Project Limitations
-
 - Some historical remaining lease values were missing and had to be estimated.
 - Identical transaction records were retained because no unique transaction ID was available.
 - Transaction volume represents resale market activity rather than total housing demand.
