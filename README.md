@@ -18,43 +18,43 @@ To comprehensively analyse historical Singapore Housing and Development Board (H
 
 ## 5 Research Objectives
 
-### Objective 1: Housing Demand & Market Activity
+### Objective 1 : Housing Demand & Market Activity
 
-**Goal:** Analyse resale transaction volumes and market activity across different years and flat types.
+**Goal :** Analyze resale transaction volumes and market activity across different years and flat types.
 
-**Key Questions:**
+**Key Questions :**
 - How have HDB resale transaction volumes changed from 2000 onwards?
 - Which flat types have the highest resale transaction volumes?
 
-### Objective 2: Resale Price Trends & Market Cycles
+### Objective 2 : Resale Price Trends & Market Cycles
 
 **Goal:** Track historical resale price trends and identify periods of price increases and decreases.
 
-**Key Questions:**
+**Key Questions :**
 - How have median HDB resale prices changed over time?
 - Which periods experienced significant changes in resale prices?
 
-### Objective 3: Property Valuation Drivers
+### Objective 3 : Property Valuation Drivers
 
-**Goal:** Examine how property characteristics relate to HDB resale prices.
-
-**Key Questions:**
+**Goal :** Examine how property characteristics relate to HDB resale prices.
+ 
+**Key Questions :**
 - How do floor area, storey range and flat type relate to resale prices?
 - What is the relationship between remaining lease and resale price?
 
-### Objective 4: Housing Affordability & Relative Housing Costs
+### Objective 4 : Housing Affordability & Relative Housing Costs
 
-**Goal:** Compare resale prices and price per square metre across different flat types and locations.
+**Goal :** Compare resale prices and price per square meter across different flat types and locations.
 
-**Key Questions:**
+**Key Questions :**
 - How do resale prices differ across flat types?
 - Which flat types and towns have higher or lower prices per square metre?
 
-### Objective 5: Location-Based Market Performance
+### Objective 5 : Location-Based Market Performance
 
-**Goal:** Compare resale market performance across different HDB towns.
+**Goal :** Compare resale market performance across different HDB towns.
 
-**Key Questions:**
+**Key Questions :**
 - Which towns have the highest and lowest median resale prices?
 - How do transaction volumes and prices per square metre differ across towns?
 
@@ -184,11 +184,11 @@ A simple Linear Regression model was used to predict HDB resale prices based on 
 
 The dataset was split into 80% training and 20% testing data.
 
-**Model Results:**
+**Model Results :**
 - **R² Score:** 0.483 – The model explains approximately 48.3% of the variation in resale prices.
 - **Mean Absolute Error (MAE):** S$91,316.53 – Predictions differ from actual resale prices by approximately S$91,317 on average.
 
-**Observation:**
+**Observatio n:**
 
 Floor area has a positive relationship with resale price, but floor area alone is not enough to predict prices accurately. Other factors such as location, remaining lease and storey range may also influence resale prices.
 <img width="518" height="336" alt="image" src="https://github.com/user-attachments/assets/d77acb9c-4bdb-493f-9ab5-f83c0e271fad" />
@@ -197,29 +197,29 @@ Floor area has a positive relationship with resale price, but floor area alone i
 
 ## Key Findings by Objective
 
-**Objective 1: Housing Demand & Market Activity**
+**Objective 1 : Housing Demand & Market Activity**
 > HDB resale transaction volumes fluctuated between 2000 and 2023, with the highest volume of 38,055 transactions recorded in 2001. Four-room flats recorded the highest transaction volume.
 
-**Objective 2: Resale Price Trends**
+**Objective 2 : Resale Price Trends**
 > Median resale prices increased from S$239,000 in 2000 to S$550,000 in 2023, showing an overall upward trend.
 
-**Objective 3: Property Valuation Drivers**
+**Objective 3 : Property Valuation Drivers**
 > Larger flats generally had higher resale prices. Floor area showed a positive correlation of 0.683 with resale price in 2023, while estimated remaining lease showed a weaker positive correlation of 0.367.
 
-**Objective 4: Housing Affordability & Relative Housing Costs**
+**Objective 4 : Housing Affordability & Relative Housing Costs**
 > Resale prices and price per square metre varied across flat types and towns. Queenstown recorded a median price of approximately S$8,145 per sqm in 2023, indicating relatively higher housing costs.
 
-**Objective 5: Location-Based Market Performance**
+**Objective 5 : Location-Based Market Performance**
 > Resale market activity and prices differed across HDB towns. Bukit Timah recorded the highest median resale price of S$825,500 in 2023.
 
 ---
 
 ## Power BI Dashboard
 The Power BI dashboard presents HDB resale market trends and property comparisons across the five research objectives.
-### Dashboard 1: HDB Resale Market Overview (Objectives 1 & 2)
+### Dashboard 1 : HDB Resale Market Overview (Objectives 1 & 2)
 <img width="684" height="379" alt="image" src="https://github.com/user-attachments/assets/036e243f-e6f9-4669-ab5c-03ac2784c9f1" />
 
-### Dashboard 2: Property & Town Analysis (Objectives 3, 4 & 5)
+### Dashboard 2 : Property & Town Analysis (Objectives 3, 4 & 5)
 <img width="622" height="382" alt="image" src="https://github.com/user-attachments/assets/140a1027-1b8e-4b56-bf5a-4e439251f964" />
 
 ---
@@ -260,5 +260,5 @@ The Power BI dashboard presents HDB resale market trends and property comparison
 - `HDB_Resale_Analytics.pbix`
 - `README.md`
 
-**Data Source:** Singapore HDB Resale Flat Prices, available from [data.gov.sg](https://data.gov.sg/).
+**Data Source :** Singapore HDB Resale Flat Prices, available from [data.gov.sg](https://data.gov.sg/).
 
