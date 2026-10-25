@@ -172,9 +172,7 @@ The main analysis covered:
 
 The analysis was carried out mainly using descriptive statistics, bar charts, line charts, scatter plots and correlation.
 
-The Python notebook is available in this repository:
-
-[RealEstateAnalysis.ipynb](RealEstateAnalysis.ipynb)
+The Python notebook is available in this repository: [RealEstateAnalysis.ipynb](RealEstateAnalysis.ipynb)
 
 ---
 ## Predictive Analytics – Simple Linear Regression
