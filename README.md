@@ -1,7 +1,5 @@
 * **Prepared By: Ivan Ho**
 * **Dataset Used: Singapore HDB Resale Flats**
-* **Course: NTUC LearningHub SCTP Associate Data Analyst**
-* **Project Type: Business Analytics**
 
 # Singapore HDB Resale Flats Analytics
 
