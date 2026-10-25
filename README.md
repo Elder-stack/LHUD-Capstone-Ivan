@@ -60,6 +60,24 @@ To analyse historical Singapore HDB resale flat transactions from 2000 onwards t
 
 ---
 
+## Exploratory Data Analysis (EDA)
+
+EDA was carried out to understand the dataset before cleaning and further analysis.
+
+Python Pandas was used to examine:
+
+1. The number of rows and columns.
+2. Column names and data types.
+3. Sample records from the dataset.
+4. Missing values.
+5. Duplicate records.
+6. General statistics for numerical columns.
+7. Different flat types and towns.
+
+These checks helped identify data quality issues and understand the structure of the dataset.
+
+---
+
 ## Data Dictionary
 
 The Singapore HDB Resale Flats dataset contains historical resale transactions of Housing and Development Board flats in Singapore.
@@ -106,24 +124,6 @@ The historical HDB resale data was obtained from four CSV datasets covering diff
 | **Total** | **628,591** |
 
 The four datasets were combined using Python Pandas to analyse HDB resale transactions over a longer period.
-
----
-
-## Exploratory Data Analysis (EDA)
-
-EDA was carried out to understand the dataset before cleaning and further analysis.
-
-Python Pandas was used to examine:
-
-1. The number of rows and columns.
-2. Column names and data types.
-3. Sample records from the dataset.
-4. Missing values.
-5. Duplicate records.
-6. General statistics for numerical columns.
-7. Different flat types and towns.
-
-These checks helped identify data quality issues and understand the structure of the dataset.
 
 ---
 
