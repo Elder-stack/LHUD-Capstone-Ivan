@@ -148,9 +148,9 @@ Since the dataset only includes January 2024, the year 2024 was excluded from fu
 
 The prepared analysis dataset covers **2000–2023**, with **628,180 records**.
 
-### 6. Price per Square Metre
+### 6. Price per Square Meter
 
-Price per square metre was calculated using:
+Price per square meter was calculated using:
 
 **Price per sqm = Resale Price ÷ Floor Area (sqm)**
 
