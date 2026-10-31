@@ -103,8 +103,6 @@ Each record represents a resale transaction and includes information such as the
 - `lease_for_analysis` – Estimated lease values used for analysis, excluding unusual estimates.
 - `price_per_sqm` – Resale price divided by floor area.
 
-The original Data Dictionary also describes geographical coordinate fields, but these are not included in the four CSV files used for the current analysis.
-
 ---
 
 ## Data Integration
@@ -294,6 +292,7 @@ Text categories such as town and flat type were converted into numerical values 
 The dataset was split into 80% training data and 20% testing data.
 
 <img width="796" height="475" alt="image" src="https://github.com/user-attachments/assets/bc2ee237-7e9e-44c7-a5f1-b5ea925aab08" />
+The chart below compares actual resale prices with the prices predicted by the model.
 
 ### Model Results
 
