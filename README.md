@@ -76,9 +76,7 @@ These checks helped identify data quality issues and understand the structure of
 
 ## Data Dictionary
 
-The Singapore HDB Resale Flats dataset contains historical resale transactions of Housing and Development Board flats in Singapore.
-
-Each record represents a resale transaction and includes information such as the transaction month, town, flat type, floor area, remaining lease and resale price.
+Each record represents an HDB resale transaction.
 
 ### Column Definitions
 
