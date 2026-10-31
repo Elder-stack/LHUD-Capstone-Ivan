@@ -307,6 +307,27 @@ Using six property factors improved the prediction results compared with using f
 However, predicted prices may still differ from actual resale prices.
 
 ---
+## Business Insights & Recommendations
+
+Based on the analysis, the following recommendations can help HDB resale buyers make more informed decisions.
+
+### 1. Compare Resale Prices Across Towns
+
+Resale prices vary across HDB towns. Buyers should compare median resale prices and price per square metre across different locations to identify suitable options within their budget.
+
+### 2. Consider Property Characteristics
+
+Floor area and remaining lease are associated with resale prices. Buyers should consider flat size, remaining lease and other property characteristics when comparing resale flats.
+
+### 3. Use Historical Trends and Price Predictions as References
+
+Historical resale price trends and the regression model can provide useful price references. However, predicted prices are estimates and should not be treated as guaranteed transaction prices.
+
+### Conclusion
+
+The project shows how historical HDB resale data can be used to understand market trends, compare property prices and support more informed housing decisions.
+
+---------
 
 ## Project Limitations
 
@@ -338,7 +359,6 @@ However, predicted prices may still differ from actual resale prices.
 ---
 
 ## Project Files
-
 - `resale-flat-prices-based-on-approval-date-2000-feb-2012.csv`
 - `resale-flat-prices-based-on-registration-date-from-mar-2012-to-dec-2014.csv`
 - `resale-flat-prices-based-on-registration-date-from-jan-2015-to-dec-2016.csv`
@@ -349,23 +369,3 @@ However, predicted prices may still differ from actual resale prices.
 - `README.md`
 
 **Data Source:** Singapore HDB Resale Flat Prices, available from [data.gov.sg](https://data.gov.sg/).
-
-## Business Insights & Recommendations
-
-Based on the analysis, the following recommendations can help HDB resale buyers make more informed decisions.
-
-### 1. Compare Resale Prices Across Towns
-
-Resale prices vary across HDB towns. Buyers should compare median resale prices and price per square metre across different locations to identify suitable options within their budget.
-
-### 2. Consider Property Characteristics
-
-Floor area and remaining lease are associated with resale prices. Buyers should consider flat size, remaining lease and other property characteristics when comparing resale flats.
-
-### 3. Use Historical Trends and Price Predictions as References
-
-Historical resale price trends and the regression model can provide useful price references. However, predicted prices are estimates and should not be treated as guaranteed transaction prices.
-
-### Conclusion
-
-The project shows how historical HDB resale data can be used to understand market trends, compare property prices and support more informed housing decisions.
