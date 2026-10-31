@@ -62,17 +62,13 @@ To analyse historical Singapore HDB resale flat transactions from 2000 onwards t
 
 ## Exploratory Data Analysis (EDA)
 
-EDA was carried out to understand the dataset before cleaning and further analysis.
+EDA was carried out using Python Pandas to understand the dataset before cleaning and further analysis.
 
-Python Pandas was used to examine:
-
-1. The number of rows and columns.
-2. Column names and data types.
-3. Sample records from the dataset.
-4. Missing values.
-5. Duplicate records.
-6. General statistics for numerical columns.
-7. Different flat types and towns.
+The checks included:
+- Dataset size, column names and data types.
+- Sample records and summary statistics.
+- Missing values and duplicate records.
+- Different flat types and towns.
 
 These checks helped identify data quality issues and understand the structure of the dataset.
 
