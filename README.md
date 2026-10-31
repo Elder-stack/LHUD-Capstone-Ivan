@@ -350,7 +350,7 @@ The Power BI dashboard presents HDB resale market trends and property comparison
 | Predictive Analytics – Multiple Linear Regression | Completed |
 | Power BI Dashboard | Completed |
 | Business insights and recommendations | Work In Progress |
-| Final presentation | Pending |
+| Final presentation | Work In Progress |
 
 ---
 
