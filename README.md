@@ -307,6 +307,7 @@ Using six property factors improved the prediction results compared with using f
 However, predicted prices may still differ from actual resale prices.
 
 ---
+
 ## Business Insights & Recommendations
 
 Based on the analysis, the following recommendations can help HDB resale buyers make more informed decisions.
@@ -327,7 +328,7 @@ Historical resale price trends and the regression model can provide useful price
 
 The project shows how historical HDB resale data can be used to understand market trends, compare property prices and support more informed housing decisions.
 
----------
+---
 
 ## Project Limitations
 
