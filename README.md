@@ -191,19 +191,15 @@ The analysis was organised according to the five research objectives, with chart
 - HDB resale transaction volumes by flat type.
 
 **Key Finding:**
-
-HDB resale transaction volumes fluctuated between 2000 and 2023, with the highest volume of 38,055 transactions recorded in 2001.
-
-Four-room flats recorded the highest number of resale transactions during the analysis period.
+- HDB resale transaction volumes fluctuated between 2000 and 2023, with the highest volume of 38,055 transactions recorded in 2001.
+- Four-room flats recorded the highest number of resale transactions during the analysis period.
 
 ### Objective 2: Resale Price Trends & Market Cycles
 - Median HDB resale price by year.
 
 **Key Finding:**
-
-Median HDB resale prices increased from S$239,000 in 2000 to S$550,000 in 2023.
-
-Although resale prices fluctuated over the years, the overall trend shows an increase in HDB resale prices.
+- Median HDB resale prices increased from S$239,000 in 2000 to S$550,000 in 2023.
+- Although resale prices fluctuated over the years, the overall trend shows an increase in HDB resale prices.
 
 ### Objective 3: Property Valuation Drivers
 - Floor area vs resale price.
@@ -211,10 +207,8 @@ Although resale prices fluctuated over the years, the overall trend shows an inc
 - Median resale price by storey range.
 
 **Key Finding:**
-
-Larger flats generally had higher resale prices.
-
-Floor area showed a positive correlation of 0.683 with resale price in 2023, while estimated remaining lease showed a weaker positive correlation of 0.367.
+- Larger flats generally had higher resale prices.
+- Floor area showed a positive correlation of 0.683 with resale price in 2023, while estimated remaining lease showed a weaker positive correlation of 0.367.
 
 ### Objective 4: Housing Affordability & Relative Housing Costs
 - Median resale price by flat type.
@@ -223,10 +217,8 @@ Floor area showed a positive correlation of 0.683 with resale price in 2023, whi
 - Median price per square metre by town.
 
 **Key Finding:**
-
-Resale prices and price per square metre varied across flat types and towns.
-
-Queenstown recorded a median price of approximately S$8,145 per sqm in 2023, showing relatively higher housing costs.
+- Resale prices and price per square metre varied across flat types and towns.
+- Queenstown recorded a median price of approximately S$8,145 per sqm in 2023, showing relatively higher housing costs.
 
 ### Objective 5: Location-Based Market Performance
 - Median resale price by town.
