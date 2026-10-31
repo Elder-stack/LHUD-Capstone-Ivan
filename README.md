@@ -1,4 +1,3 @@
-
 * **Prepared By: Ivan Ho**
 * **Dataset Used: Singapore HDB Resale Flats**
 
@@ -65,10 +64,11 @@ To analyse historical Singapore HDB resale flat transactions from 2000 onwards t
 EDA was carried out using Python Pandas to understand the dataset before cleaning and further analysis.
 
 The checks included:
-- Dataset size, column names and data types.
-- Sample records and summary statistics.
-- Missing values and duplicate records.
-- Different flat types and towns.
+
+1. Dataset size, column names and data types.
+2. Sample records and summary statistics.
+3. Missing values and duplicate records.
+4. Different flat types and towns.
 
 These checks helped identify data quality issues and understand the structure of the dataset.
 
@@ -172,9 +172,7 @@ The prepared analysis dataset covers **2000–2023**, with **628,180 records**.
 
 ### 2. Remaining Lease
 
-Estimated remaining lease values were calculated for transactions where the original remaining lease information was unavailable.
-
-The estimated values were used for analysis while keeping the original remaining lease column unchanged.
+Estimated remaining lease values were used where original values were unavailable, while preserving the original data.
 
 ### 3. Price per Square Metre
 
@@ -266,12 +264,24 @@ The Python notebook containing the charts and analysis is available here:
 
 ---
 
+## Power BI Dashboard
+
+The Power BI dashboard presents HDB resale market trends and property comparisons across the five research objectives.
+
+### Dashboard 1: HDB Resale Market Overview (Objectives 1 & 2)
+
+<img width="684" height="379" alt="Dashboard 1" src="https://github.com/user-attachments/assets/036e243f-e6f9-4669-ab5c-03ac2784c9f1" />
+
+### Dashboard 2: Property & Town Analysis (Objectives 3, 4 & 5)
+
+<img width="622" height="382" alt="Dashboard 2" src="https://github.com/user-attachments/assets/140a1027-1b8e-4b56-bf5a-4e439251f964" />
+
+---
 ## Predictive Analytics – Multiple Linear Regression
 
 Multiple Linear Regression was used to predict HDB resale prices using several property factors based on 2023 transaction data.
 
 The model used six factors:
-
 1. Floor area
 2. Town
 3. Flat type
@@ -295,29 +305,11 @@ The dataset was split into 80% training data and 20% testing data.
 
 ### Key Finding
 
-The Multiple Linear Regression model achieved an R² score of 0.888 (88.8%) and an MAE of S$43,495.64.
+The model explains approximately 88.8% of the variation in HDB resale prices in the 2023 testing data.
 
-The model explains approximately 88.8% of the variation in HDB resale prices in the testing data.
-
-Compared with using only floor area, including town, flat type, remaining lease, storey range and flat model improved the prediction results.
+Using six property factors improved the prediction results compared with using floor area alone.
 
 However, predicted prices may still differ from actual resale prices.
-
-The Actual vs Predicted chart is included in the Python notebook.
-
----
-
-## Power BI Dashboard
-
-The Power BI dashboard presents HDB resale market trends and property comparisons across the five research objectives.
-
-### Dashboard 1: HDB Resale Market Overview (Objectives 1 & 2)
-
-<img width="684" height="379" alt="Dashboard 1" src="https://github.com/user-attachments/assets/036e243f-e6f9-4669-ab5c-03ac2784c9f1" />
-
-### Dashboard 2: Property & Town Analysis (Objectives 3, 4 & 5)
-
-<img width="622" height="382" alt="Dashboard 2" src="https://github.com/user-attachments/assets/140a1027-1b8e-4b56-bf5a-4e439251f964" />
 
 ---
 
