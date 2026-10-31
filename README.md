@@ -291,8 +291,8 @@ Text categories such as town and flat type were converted into numerical values 
 
 The dataset was split into 80% training data and 20% testing data.
 
-<img width="796" height="475" alt="image" src="https://github.com/user-attachments/assets/bc2ee237-7e9e-44c7-a5f1-b5ea925aab08" />
 The chart below compares actual resale prices with the prices predicted by the model.
+<img width="796" height="475" alt="image" src="https://github.com/user-attachments/assets/bc2ee237-7e9e-44c7-a5f1-b5ea925aab08" />
 
 ### Model Results
 
