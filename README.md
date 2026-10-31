@@ -251,14 +251,10 @@ The following charts were used:
 - Resale transaction volume by town in 2023.
 
 **Key Finding:**
+- Resale market activity and prices differed across HDB towns.
+- Bukit Timah recorded the highest median resale price of S$825,500 in 2023.
 
-Resale market activity and prices differed across HDB towns.
-
-Bukit Timah recorded the highest median resale price of S$825,500 in 2023.
-
-The Python notebook containing the charts and analysis is available here:
-
-[RealEstateAnalysis.ipynb](RealEstateAnalysis.ipynb)
+The Python notebook containing the charts and analysis is available here: [RealEstateAnalysis.ipynb](RealEstateAnalysis.ipynb)
 
 ---
 
@@ -336,7 +332,7 @@ However, predicted prices may still differ from actual resale prices.
 | Descriptive Analytics – 5 research objectives | Completed |
 | Predictive Analytics – Multiple Linear Regression | Completed |
 | Power BI Dashboard | Completed |
-| Business insights and recommendations | Work In Progress |
+| Business insights and recommendations | Completed |
 | Final presentation | Work In Progress |
 
 ---
@@ -353,3 +349,23 @@ However, predicted prices may still differ from actual resale prices.
 - `README.md`
 
 **Data Source:** Singapore HDB Resale Flat Prices, available from [data.gov.sg](https://data.gov.sg/).
+
+## Business Insights & Recommendations
+
+Based on the analysis, the following recommendations can help HDB resale buyers make more informed decisions.
+
+### 1. Compare Resale Prices Across Towns
+
+Resale prices vary across HDB towns. Buyers should compare median resale prices and price per square metre across different locations to identify suitable options within their budget.
+
+### 2. Consider Property Characteristics
+
+Floor area and remaining lease are associated with resale prices. Buyers should consider flat size, remaining lease and other property characteristics when comparing resale flats.
+
+### 3. Use Historical Trends and Price Predictions as References
+
+Historical resale price trends and the regression model can provide useful price references. However, predicted prices are estimates and should not be treated as guaranteed transaction prices.
+
+### Conclusion
+
+The project shows how historical HDB resale data can be used to understand market trends, compare property prices and support more informed housing decisions.
