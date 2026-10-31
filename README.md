@@ -187,9 +187,6 @@ Descriptive Analytics was carried out using Python, Pandas and Matplotlib.
 The analysis was organised according to the five research objectives, with charts and key findings to support each objective.
 
 ### Objective 1: Housing Demand & Market Activity
-
-The following charts were used:
-
 - HDB resale transaction volumes by year.
 - HDB resale transaction volumes by flat type.
 
@@ -200,9 +197,6 @@ HDB resale transaction volumes fluctuated between 2000 and 2023, with the highes
 Four-room flats recorded the highest number of resale transactions during the analysis period.
 
 ### Objective 2: Resale Price Trends & Market Cycles
-
-The following chart was used:
-
 - Median HDB resale price by year.
 
 **Key Finding:**
@@ -212,9 +206,6 @@ Median HDB resale prices increased from S$239,000 in 2000 to S$550,000 in 2023.
 Although resale prices fluctuated over the years, the overall trend shows an increase in HDB resale prices.
 
 ### Objective 3: Property Valuation Drivers
-
-The following charts were used:
-
 - Floor area vs resale price.
 - Remaining lease vs resale price.
 - Median resale price by storey range.
@@ -226,9 +217,6 @@ Larger flats generally had higher resale prices.
 Floor area showed a positive correlation of 0.683 with resale price in 2023, while estimated remaining lease showed a weaker positive correlation of 0.367.
 
 ### Objective 4: Housing Affordability & Relative Housing Costs
-
-The following charts were used:
-
 - Median resale price by flat type.
 - Median resale price by flat type in 2023.
 - Median price per square metre by flat type.
@@ -241,9 +229,6 @@ Resale prices and price per square metre varied across flat types and towns.
 Queenstown recorded a median price of approximately S$8,145 per sqm in 2023, showing relatively higher housing costs.
 
 ### Objective 5: Location-Based Market Performance
-
-The following charts were used:
-
 - Median resale price by town.
 - Median resale price by town in 2023.
 - Resale transaction volume by town in 2023.
@@ -332,10 +317,8 @@ The project shows how historical HDB resale data can be used to understand marke
 
 - Some historical remaining lease values were missing and had to be estimated.
 - Identical transaction records were retained because no unique transaction ID was available.
-- Transaction volume represents resale market activity rather than total housing demand.
-- Price per square metre compares relative housing costs but does not directly measure affordability against household income.
-- The dataset only covers transactions up to January 2024, with the main analysis ending in 2023.
-- Price comparisons across towns and flat types may be influenced by differences in property characteristics.
+- Transaction volume represents resale market activity, while price per square metre measures relative housing costs rather than affordability based on household income.
+- The analysis covers 2000–2023, and price comparisons across towns and flat types may be influenced by differences in property characteristics.
 - The regression model was trained and tested using 2023 transactions, so its performance on future transactions has not been tested.
 
 ---
